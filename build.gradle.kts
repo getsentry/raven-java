@@ -114,7 +114,7 @@ spotless {
         target("**/*.java")
         removeUnusedImports()
         googleJavaFormat()
-        targetExclude("**/generated/**")
+        targetExclude("**/generated/**", "**/vendor/**")
     }
 
     kotlin {
